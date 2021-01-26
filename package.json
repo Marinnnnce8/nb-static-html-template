@@ -1,5 +1,5 @@
 {
-  "name": "nb-pw-html-template",
+  "name": "nb-static-html-template",
   "version": "1.1.1",
   "main": "dist/home.html",
   "author": "NB Communication Ltd <info@nbcommunication.com>",
@@ -7,7 +7,6 @@
   "private": true,
   "config": {
     "dist": "dist",
-    "pw": "pw",
     "src": "src"
   },
   "scripts": {
@@ -15,7 +14,6 @@
     "build-uikit-js": "gulp uikitJs",
     "cf": "gulp cf",
     "dev": "gulp dev",
-    "pw": "gulp pw",
     "release": "gulp release",
     "reset": "gulp reset",
     "rf": "gulp rf"

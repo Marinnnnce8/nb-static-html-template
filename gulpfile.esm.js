@@ -35,9 +35,7 @@ export const dev = gulp.series(
 // Reset
 export const reset = gulp.series(
 	// Remove dist folder
-	() => rm(config.dist),
-	// Remove pw folder
-	() => rm(config.pw)
+	() => rm(config.dist)
 );
 
 // Create File
@@ -46,13 +44,9 @@ export const cf = tasks.cf;
 // Remove file
 export const rf = tasks.rf;
 
-// Prepare files for PW development
-export const pw = tasks.pw;
-
 // Release
 export const release = gulp.series(
 	reset,
 	build,
-	pw,
 	tasks.htmlIndex
 );

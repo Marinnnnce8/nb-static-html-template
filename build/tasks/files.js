@@ -119,7 +119,7 @@ export function rf(cb) {
 export function htmlIndex() {
 	return gulp.src(`build/tpl/index-html.txt`)
 		.pipe(consolidate('lodash', {
-			files: fs.readdirSync(`${config.pw}/html`),
+			files: fs.readdirSync(`${config}/html`),
 			title: getTitle(pkgName),
 			version: pkgVersion,
 			year: (new Date()).getFullYear(),
