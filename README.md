@@ -1,6 +1,6 @@
-# NB HTML Template for ProcessWire Development
+# NB HTML Template for Static Development
 
-A package for building static code for later ProcessWire development, using [Gulp](https://gulpjs.com) for the build pipeline and [Handlebars](https://handlebarsjs.com/) for templating.
+A package for building static code, using [Gulp](https://gulpjs.com) for the build pipeline and [Handlebars](https://handlebarsjs.com/) for templating.
 
 *Note: Terminal commands are given for `yarn` but `npm` equivalents should also work.*
 
@@ -108,8 +108,6 @@ When the project is complete, run:
 
 	yarn release
 
-This will reset the project and build everything again, and will also run:
-
-	yarn pw
+This will reset the project and build everything again.
 
 which prepares files for ProcessWire development.
