@@ -1,0 +1,21 @@
+{{#> main}}
+	{{#*inline "main"}}
+
+	{{#> ukSection heading="Internal Pages" size="large"}}
+		{{#*inline "out"}}
+
+		{{> nbJson id="children" data=items.children}}
+
+		{{/inline}}
+	{{/ukSection}}
+
+	{{#> ukSection heading="Latest News" size="large"}}
+		{{#*inline "out"}}
+
+		{{> nbJson id="posts" data=items.posts}}
+
+		{{/inline}}
+	{{/ukSection}}
+
+	{{/inline}}
+{{/main}}
