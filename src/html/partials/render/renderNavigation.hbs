@@ -4,15 +4,17 @@
 	<li class="{{#if children}}uk-parent{{/if}}{{#if (eq ../page.name name)}} uk-active{{/if}}">
 		<a href="{{default url "#"}}">{{title}}</a>
 		{{#if children}}
-		<ul class="uk-nav" id="nav-{{ida title}}">
-		{{#each children}}
-			{{#with this}}
-			<li>
-				<a href="{{default url "#"}}">{{title}}</a>
-			</li>
-			{{/with}}
-		{{/each}}
-		</ul>
+        <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav" id="nav-{{ida title}}">
+            {{#each children}}
+                {{#with this}}
+                <li>
+                    <a href="{{default url "#"}}">{{title}}</a>
+                </li>
+                {{/with}}
+            {{/each}}
+            </ul>
+        </div>
 		{{/if}}
 	</li>
 	{{/with}}
